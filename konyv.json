@@ -4,227 +4,129 @@
     "szoveg": "Bebújsz a barlang száján a sötétségbe... Hosszú gyaloglás után egy elágazáshoz érsz.",
     "opciok": [
       { "szoveg": "Nyugat felé fordulsz (Lapozz a 71-re)", "kovetkezo": 71 },
-      { "szoveg": "Kelet felé fordulsz (Lapozz a 278-ra)", "kovetkezo": 278 },
-      { "szoveg": "Egy gyanús mellékjáratot választasz (Lapozz az 5-re)", "kovetkezo": 5 }
+      { "szoveg": "Kelet felé fordulsz (Lapozz a 278-ra)", "kovetkezo": 278 }
     ]
   },
   {
     "id": 71,
-    "szoveg": "A folyosó egy kétszárnyú faajtóhoz vezet. Mögötte halk horkolást hallasz. Résnyire nyitod: egy Ork alszik a széken.",
+    "szoveg": "A folyosó egy kétszárnyú faajtóhoz vezet. Mögötte halk horkolást hallasz. Résnyire nyitod: egy Ork alszik a széken. Ha lenne egy fegyvered, most végezhetnél vele...",
     "opciok": [
-      { "szoveg": "Lopakodva megtámadod (Lapozz a 301-re)", "kovetkezo": 301 },
-      { "szoveg": "Óvatosan bezárod az ajtót és mész tovább északnak (Lapozz a 307-re)", "kovetkezo": 307 }
-    ]
+      { "szoveg": "Ha van nálad tőr, csendben lecsapsz rá (Lapozz a 301-re)", "kovetkezo": 301 },
+      { "szoveg": "Óvatosan bezárod az ajtót és mész tovább északnak a kapuhoz (Lapozz a 307-re)", "kovetkezo": 307 },
+      { "szoveg": "Inkább visszafordulsz a fő elágazáshoz (Lapozz az 1-re)", "kovetkezo": 1 }
+    ],
+    "tor_szukseges_orkhoz": true
   },
   {
     "id": 278,
-    "szoveg": "Újabb elágazáshoz érsz, ahol egy magányos út vezet észak felé.",
+    "szoveg": "Újabb elágazáshoz érsz, ahol egy út vezet észak felé, és egy kis fülke bújik meg oldalt.",
     "opciok": [
+      { "szoveg": "Benézel a kis fülkébe (Lapozz a 10-re)", "kovetkezo": 10 },
       { "szoveg": "Továbbmész egyenesen északra (Lapozz a 92-re)", "kovetkezo": 92 },
-      { "szoveg": "Visszafordulsz a fő elágazáshoz (Lapozz az 1-re)", "kovetkezo": 1 },
-      { "szoveg": "Benézel egy kis fülkébe (Lapozz a 10-re)", "kovetkezo": 10 }
-    ]
-  },
-  {
-    "id": 301,
-    "szoveg": "A meglepetés erejével harcolsz az Ork őrrel! Sikerül legyőznöd. A zsebében találsz egy kulcsot és egy kulacs barlangi sört.",
-    "opciok": [
-      { "szoveg": "Elteszed a kulcsot és a sört, majd mész északra (Lapozz a 307-re)", "kovetkezo": 307 }
-    ],
-    "targy": "Kapu kulcs"
-  },
-  {
-    "id": 307,
-    "szoveg": "A folyosó hirtelen északra kanyarodik. Egy idő után egy masszív vasrácsos kapuhoz érsz, ami lezárja az utat.",
-    "opciok": [
-      { "szoveg": "Ha van kulcsod, megpróbálod kinyitni (Lapozz a 44-re)", "kovetkezo": 44 },
-      { "szoveg": "Ha nincs kulcsod, kénytelen vagy visszafordulni a kelet felé eső járatba (Lapozz a 278-ra)", "kovetkezo": 278 }
-    ],
-    "kulcs_szukseges": "Kapu kulcs"
-  },
-  {
-    "id": 92,
-    "szoveg": "Egy nagy, nyirkos terembe érsz. A falakon fáklyák égnek. A terem közepén egy öreg láda hever.",
-    "opciok": [
-      { "szoveg": "Odanyitsz a ládához, hátha van benne valami (Lapozz a 240-re)", "kovetkezo": 240 },
-      { "szoveg": "Gyanús a dolog, inkább kikerülöd és mész a szemközti ajtóhoz (Lapozz a 111-re)", "kovetkezo": 111 }
-    ]
-  },
-  {
-    "id": 240,
-    "szoveg": "Ahogy felemeled a láda fedelét, egy mérges gázfelhő tör elő! Belélegzed a mérget. (Veszítesz 3 Életerőt!)",
-    "opciok": [
-      { "szoveg": "Köhögve bár, de sietsz tovább a szemközti ajtón (Lapozz a 111-re)", "kovetkezo": 111 }
-    ],
-    "sebzes": 3
-  },
-  {
-    "id": 44,
-    "szoveg": "A kulcs tökéletesen illik a zárba! A nehéz kapu csikorogva kitárul. Egy hosszú, fáklyákkal megvilágított folyosóra érsz.",
-    "opciok": [
-      { "szoveg": "Elindulsz előre a folyosón (Lapozz a 150-re)", "kovetkezo": 150 }
-    ]
-  },
-  {
-    "id": 111,
-    "szoveg": "Az ajtón túl egy sötét, szűk alagút vezet. A távolból morajlást hallasz, mintha egy földalatti folyó lenne a közelben.",
-    "opciok": [
-      { "szoveg": "Óvatosan előrehaladsz a hang irányába (Lapozz a 218-ra)", "kovetkezo": 218 }
-    ]
-  },
-  {
-    "id": 150,
-    "szoveg": "Egy elhagyatott őrszobába érsz. Az asztalon egy félig megevett étel és egy térkép részlete hever.",
-    "opciok": [
-      { "szoveg": "Elteszed a térképet és mész tovább (Lapozz a 291-re)", "kovetkezo": 291 }
-    ],
-    "targy": "Térkép darab"
-  },
-  {
-    "id": 218,
-    "szoveg": "Valóban! Egy rohanó vizű földalatti folyó partjára érsz. Egy régi fahíd vezet át rajta, de nagyon korhadtnak tűnik.",
-    "opciok": [
-      { "szoveg": "Megkockáztatod az átkelést a hídon (Lapozz a 360-ra)", "kovetkezo": 360 },
-      { "szoveg": "Keresel egy másik utat a folyó mentén (Lapozz a 174-re)", "kovetkezo": 174 }
-    ]
-  },
-  {
-    "id": 291,
-    "szoveg": "A folyosó végén egy lépcső vezet lefelé a mélybe. Hideg árad fel lentről.",
-    "opciok": [
-      { "szoveg": "Lemész a lépcsőn (Lapozz a 82-re)", "kovetkezo": 82 }
-    ]
-  },
-  {
-    "id": 360,
-    "szoveg": "Rálépsz a hídra, de a korhadt deszkák hangos reccsenéssel eltörnek alattad! Beleesel a sebes folyóba. A sodrás magával ragad és a szikláknak csap. JÁTÉK VÉGE.",
-    "opciok": [],
-    "halal": true
-  },
-  {
-    "id": 174,
-    "szoveg": "A folyó partján találsz egy kikötött kis csónakot, benne egy evezővel.",
-    "opciok": [
-      { "szoveg": "Beszállsz és átevezel a túlpartra (Lapozz a 67-re)", "kovetkezo": 67 }
-    ]
-  },
-  {
-    "id": 82,
-    "szoveg": "A lépcső alján egy újabb folyosó fogad. Itt két ajtót látsz: egy vasalt tölgyfa ajtót és egy díszes réz ajtót.",
-    "opciok": [
-      { "szoveg": "Benyitsz a tölgyfa ajtón (Lapozz a 105-re)", "kovetkezo": 105 },
-      { "szoveg": "Kinyitod a díszes réz ajtót (Lapozz a 202-re)", "kovetkezo": 202 }
-    ]
-  },
-  {
-    "id": 67,
-    "szoveg": "Sikeresen átérsz a túlpartra. A csónakból kiszállva egy barlangterembe lépsz, ahol egy hatalmas, vicsorgó Barlangi Troll állja utadat!",
-    "opciok": [
-      { "szoveg": "Kardot rántasz és megküzdesz a Trollal (Lapozz a 133-ra)", "kovetkezo": 133 }
-    ]
-  },
-  {
-    "id": 105,
-    "szoveg": "A szoba egy fegyverraktár! A falakon rozsdás kardok lógnak, de egy pajzs jó állapotban van. Elteszed?",
-    "opciok": [
-      { "szoveg": "Magadhoz veszed a pajzsot és visszatérsz (Lapozz a 82-re)", "kovetkezo": 82 }
-    ],
-    "targy": "Pajzs"
-  },
-  {
-    "id": 202,
-    "szoveg": "A díszes teremben egy kőoltár áll, rajta egy csillogó gyémánttal. Mögötte azonban egy rejtett csapda aktiválódik: nyilak repülnek feléd!",
-    "opciok": [
-      { "szoveg": "Ha van pajzsod, kivéded a nyilakat (Lapozz a 315-re)", "kovetkezo": 315 },
-      { "szoveg": "Ha nincs pajzsod, eltalálnak! (Veszítesz 4 Életerőt) (Lapozz a 315-re)", "kovetkezo": 315 }
-    ],
-    "pajzs_szukseges": "Pajzs",
-    "sebzes_pajzs_nelkul": 4
-  },
-  {
-    "id": 133,
-    "szoveg": "Kemény harc árán, de sikerül legyőznöd a Trollt! A Troll mögötti folyosón haladsz tovább, ami egyenesen a Varázsló belső szentélyéhez vezet.",
-    "opciok": [
-      { "szoveg": "Belépsz a Varázsló előszobájába (Lapozz a 380-ra)", "kovetkezo": 380 }
-    ]
-  },
-  {
-    "id": 315,
-    "szoveg": "Továbbhaladva a terem mögötti titkos átjárón, egy hosszú, lefelé lejtő alagútba érsz, ami összekötődik a barlang mélyebb részeivel.",
-    "opciok": [
-      { "szoveg": "Követed az alagutat (Lapozz a 380-ra)", "kovetkezo": 380 }
-    ]
-  },
-  {
-    "id": 380,
-    "szoveg": "Egy hatalmas, gótikus csarnokba érsz. A falakon sötét mágiáról szóló könyvek sorakoznak. A terem végén egy hatalmas trónuson ül valaki.",
-    "opciok": [
-      { "szoveg": "Óvatosan közelebb lépsz a trónushoz (Lapozz a 395-re)", "kovetkezo": 395 }
-    ]
-  },
-  {
-    "id": 395,
-    "szoveg": "Maga a Tűzhegy Varázslója az! Feláll a trónjáról, szemeiben vörös tűz ég. 'Merészelsz belépni a birodalmamba, halandó?' - dörgi, és felemeli a varázsbotját.",
-    "opciok": [
-      { "szoveg": "Ha nálad van a Térkép darab, észreveszed a terem titkos gyenge pontját (Lapozz a 400-ra)", "kovetkezo": 400 },
-      { "szoveg": "Ha nincs térképed, direkt rohamot indítasz ellene (Lapozz a 399-re)", "kovetkezo": 399 }
-    ],
-    "terkep_szukseges": "Térkép darab"
-  },
-  {
-    "id": 399,
-    "szoveg": "A Varázsló egyetlen pusztító villámcsapással porrá éget. Nem voltál elég felkészült. JÁTÉK VÉGE.",
-    "opciok": [],
-    "halal": true
-  },
-  {
-    "id": 400,
-    "szoveg": "A térkép segítségével tudod, hogy a Varázsló feletti csillár a gyenge pont! Gyorsan elvágod a tartókötelet. A nehéz csillár egyenesen a Varázslóra zuhan, eltiporva őt! Megnyerted a játékot és megszerezted a Tűzhegy kincsét! GRATULÁLUNK!",
-    "opciok": [],
-    "gyozelem": true
-  },
-  {
-    "id": 5,
-    "szoveg": "Egy mellékvágányra tévedtél. A falból víz szivárog. Nincs itt semmi érdekes.",
-    "opciok": [
-      { "szoveg": "Visszatérsz az elágazáshoz (Lapozz az 1-re)", "kovetkezo": 1 }
+      { "szoveg": "Visszafordulsz a fő elágazáshoz (Lapozz az 1-re)", "kovetkezo": 1 }
     ]
   },
   {
     "id": 10,
     "szoveg": "Egy kis fülkében régi csontvázakat találsz. Az egyik kezében egy jó állapotú tőr van. Elteszed?",
     "opciok": [
-      { "szoveg": "Zsebre vágom a tőrt és visszamegyek (Lapozz a 278-ra)", "kovetkezo": 278 },
-      { "szoveg": "Otthagyod és inkább visszatérsz (Lapozz a 278-ra)", "kovetkezo": 278 }
+      { "szoveg": "Zsebre vágom a tőrt és visszatérek a járatba (Lapozz a 278-ra)", "kovetkezo": 278 },
+      { "szoveg": "Otthagyod a fegyvert és visszatérsz (Lapozz a 278-ra)", "kovetkezo": 278 }
     ],
     "targy": "Rozsdás tőr"
   },
   {
-    "id": 15,
-    "szoveg": "Gyanús zajokat hallasz a hátad mögül, de mikor megfordulsz, csak egy patkány fut el.",
+    "id": 301,
+    "szoveg": "A nálad lévő tőrrel egyetlen gyors mozdulattal elintézed az Ork őrt! A zsebében találsz egy kulcsot.",
     "opciok": [
-      { "szoveg": "Folytatod az utat északnak (Lapozz a 92-re)", "kovetkezo": 92 }
+      { "szoveg": "Elteszed a kulcsot, majd mész északra a kapuhoz (Lapozz a 307-re)", "kovetkezo": 307 }
+    ],
+    "targy": "Kapu kulcs"
+  },
+  {
+    "id": 307,
+    "szoveg": "A folyosó végén egy masszív vasrácsos kapuhoz érsz, ami teljesen lezárja az utat.",
+    "opciok": [
+      { "szoveg": "Ha nálad van a kulcs, kinyitod a kaput (Lapozz a 44-re)", "kovetkezo": 44 },
+      { "szoveg": "Nincs kulcsod, kénytelen vagy visszafordulni az elágazáshoz (Lapozz az 1-re)", "kovetkezo": 1 }
+    ],
+    "kulcs_szukseges": "Kapu kulcs"
+  },
+  {
+    "id": 44,
+    "szoveg": "A kulcs elfordul a zárban! A kapu kitárul. Egy őrszobába érsz, ahol egy asztalon egy értékes térkép részlete hever.",
+    "opciok": [
+      { "szoveg": "Magadhoz veszed a térképet és sietsz tovább a lépcsőhöz (Lapozz a 291-re)", "kovetkezo": 291 }
+    ],
+    "targy": "Térkép darab"
+  },
+  {
+    "id": 92,
+    "szoveg": "Egy nagy, nyirkos terembe érsz. A falakon fáklyák égnek. A terem közepén egy öreg láda hever.",
+    "opciok": [
+      { "szoveg": "Odanyitsz a ládához, hátha van benne valami (Lapozz a 240-re)", "kovetkezo": 240 },
+      { "szoveg": "Gyanús a dolog, inkább kikerülöd és mész a szemközti folyosóra (Lapozz a 291-re)", "kovetkezo": 291 }
     ]
   },
   {
-    "id": 20,
-    "szoveg": "Zsákutcába jutottál. A falon egy rejtélyes felirat áll: 'A varázsló mindent lát'.",
+    "id": 240,
+    "szoveg": "Ahogy felemeled a láda fedelét, egy mérges gázfelhő tör elő! Belélegzed a mérget. (Veszítesz 3 Életerőt!)",
     "opciok": [
-      { "szoveg": "Nincs mit tenni, fordulsz vissza (Lapozz a 71-re)", "kovetkezo": 71 }
+      { "szoveg": "Köhögve bár, de sietsz tovább a folyosón (Lapozz a 291-re)", "kovetkezo": 291 }
+    ],
+    "sebzes": 3
+  },
+  {
+    "id": 291,
+    "szoveg": "A folyosó végén egy lépcső vezet lefelé a mélybe. Hideg árad fel lentről. Elindulsz lefelé.",
+    "opciok": [
+      { "szoveg": "Lemész a lépcsőn a barlang mélyére (Lapozz a 82-re)", "kovetkezo": 82 }
     ]
   },
   {
-    "id": 25,
-    "szoveg": "Egy beszakadt mennyezetű részhez érsz. Óvatosan át kell másznod a sziklákon.",
+    "id": 82,
+    "szoveg": "A lépcső alján egy sötét szakaszhoz érsz. A földön egy rejtett veremcsapda van, amit nem látsz szabad szemmel!",
     "opciok": [
-      { "szoveg": "Átmászol a köveken (Lapozz a 150-re)", "kovetkezo": 150 }
+      { "szoveg": "Ha van nálad Térkép, az jelzi a csapdát, így könnyen kikerülöd (Lapozz a 380-ra)", "kovetkezo": 380 },
+      { "szoveg": "Nincs térképed, gyanútlanul mész előre a sötétben (Lapozz a 202-re)", "kovetkezo": 202 }
+    ],
+    "flexibilis_terkep_ellenorzes": true
+  },
+  {
+    "id": 202,
+    "szoveg": "Térkép híján belelépsz a rejtett verembe, aminek az alján kihegyezett karók vannak! (Veszítesz 5 Életerőt!)",
+    "opciok": [
+      { "szoveg": "Kimászol a veremből és sántítva mész tovább (Lapozz a 380-ra)", "kovetkezo": 380 }
+    ],
+    "sebzes": 5
+  },
+  {
+    "id": 380,
+    "szoveg": "Egy hatalmas, gótikus csarnokba érsz. A falakon sötét könyvek sorakoznak. A terem végén egy hatalmas trónuson ül valaki. Elérkeztél a végkifejlethez.",
+    "opciok": [
+      { "szoveg": "Óvatosan közelebb lépsz a trónushoz (Lapozz a 395-re)", "kovetkezo": 395 }
     ]
   },
   {
-    "id": 30,
-    "szoveg": "Egy elhagyott tábortűz hamuját találod meg. Valaki nemrég járhatott itt.",
+    "id": 395,
+    "szoveg": "Maga a Tűzhegy Varázslója az! 'Merészelsz belépni a birodalmamba?' - dörgi, és felemeli a botját. Mit teszel?",
     "opciok": [
-      { "szoveg": "Sietve továbbmész a sötétben (Lapozz a 218-ra)", "kovetkezo": 218 }
-    ]
+      { "szoveg": "A nálad lévő Térkép segítségével észreveszed a felette lévő gyenge csillárt, és rárobbantod! (Lapozz a 400-ra)", "kovetkezo": 400 },
+      { "szoveg": "Nincs térképed, de a nálad lévő Rozsdás tőrrel tiszta erőből torkon szúrod, mielőtt varázsolna! (Lapozz a 400-ra)", "kovetkezo": 400 },
+      { "szoveg": "Puszta kézzel rohamban támadsz rá fegyver és terv nélkül (Lapozz a 399-re)", "kovetkezo": 399 }
+    ],
+    "vegjatek_ellenorzes": true
+  },
+  {
+    "id": 399,
+    "szoveg": "A Varázsló egyetlen pusztító villámcsapással porrá éget. Nem volt nálad se terv (térkép), se fegyver (tőr). JÁTÉK VÉGE.",
+    "opciok": [],
+    "halal": true
+  },
+  {
+    "id": 400,
+    "szoveg": "Sikerült! A Varázsló holtan roskad össze. Megnyerted a játékot és megszerezted a Tűzhegy kincsét! GRATULÁLUNK!",
+    "opciok": [],
+    "gyozelem": true
   }
 ]
