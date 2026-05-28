@@ -103,3 +103,14 @@ function megjelenitFejezet(fejezetId) {
         gombokContainer.appendChild(gomb);
     });
 }
+
+function ujrainditasGomb() {
+    let gombokContainer = document.getElementById('choices-container');
+    let gomb = document.createElement('button');
+    gomb.className = 'choice-btn restart-btn';
+    gomb.innerText = ' Új játék indítása';
+    gomb.onclick = () => {
+        jatekInditasa();
+    };
+    gombokContainer.appendChild(gomb);
+}
