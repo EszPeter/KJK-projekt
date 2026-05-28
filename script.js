@@ -71,7 +71,7 @@ function megjelenitFejezet(fejezetId) {
         ujrainditasGomb();
         return;
     }
-    fejezet.opciok.forEach(opcio => {
+    fejezet.opciok.forEach(opcio =>{ 
         if (fejezet.tor_szukseges_orkhoz && opcio.kovetkezo === 301 && !jatekos.hatizsak.includes("Rozsdás tőr")) {
             return; 
         }
@@ -88,17 +88,17 @@ function megjelenitFejezet(fejezetId) {
             if (opcio.kovetkezo === 202 && jatekos.hatizsak.includes("Térkép darab")) return;
         }
 
-       
         if (fejezet.vegjatek_ellenorzes) {
-
             if (opcio.kovetkezo === 400 && opcio.szoveg.includes("Térkép") && !jatekos.hatizsak.includes("Térkép darab")) {
                 return;
             }
-
             if (opcio.kovetkezo === 400 && opcio.szoveg.includes("tőrrel") && !jatekos.hatizsak.includes("Rozsdás tőr")) {
                 return;
             }
-            if (opcio.kovetkezo === 399 && (jatekos.hatizsak.includes("Térkép darab") || jatekos.hatizsak.includes("Rozsdás tőr"))) {
+            if (opcio.kovetkezo === 400 && opcio.szoveg.includes("pajzsod") && !jatekos.hatizsak.includes("Nehéz pajzs")) {
+                return;
+            }
+            if (opcio.kovetkezo === 399 && (jatekos.hatizsak.includes("Térkép darab") || jatekos.hatizsak.includes("Rozsdás tőr") || jatekos.hatizsak.includes("Nehéz pajzs"))) {
                 return;
             }
         }
