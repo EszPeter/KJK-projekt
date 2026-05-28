@@ -72,19 +72,35 @@ function megjelenitFejezet(fejezetId) {
         return;
     }
     fejezet.opciok.forEach(opcio => {
+        if (fejezet.tor_szukseges_orkhoz && opcio.kovetkezo === 301 && !jatekos.hatizsak.includes("Rozsdás tőr")) {
+            return; 
+        }
 
         if (fejezet.kulcs_szukseges && opcio.kovetkezo === 44 && !jatekos.hatizsak.includes("Kapu kulcs")) {
             return;
         }
-        if (fejezet.kulcs_szukseges && opcio.kovetkezo === 278 && jatekos.hatizsak.includes("Kapu kulcs")) {
-            return;
+        if (fejezet.kulcs_szukseges && opcio.kovetkezo === 1 && jatekos.hatizsak.includes("Kapu kulcs")) {
+            return;  
         }
 
-        if (fejezet.terkep_szukseges && opcio.kovetkezo === 400 && !jatekos.hatizsak.includes("Térkép darab")) {
-            return; 
+        if (fejezet.flexibilis_terkep_ellenorzes) {
+            if (opcio.kovetkezo === 380 && !jatekos.hatizsak.includes("Térkép darab")) return;
+            if (opcio.kovetkezo === 202 && jatekos.hatizsak.includes("Térkép darab")) return;
         }
-        if (fejezet.terkep_szukseges && opcio.kovetkezo === 399 && jatekos.hatizsak.includes("Térkép darab")) {
-            return; 
+
+       
+        if (fejezet.vegjatek_ellenorzes) {
+
+            if (opcio.kovetkezo === 400 && opcio.szoveg.includes("Térkép") && !jatekos.hatizsak.includes("Térkép darab")) {
+                return;
+            }
+
+            if (opcio.kovetkezo === 400 && opcio.szoveg.includes("tőrrel") && !jatekos.hatizsak.includes("Rozsdás tőr")) {
+                return;
+            }
+            if (opcio.kovetkezo === 399 && (jatekos.hatizsak.includes("Térkép darab") || jatekos.hatizsak.includes("Rozsdás tőr"))) {
+                return;
+            }
         }
 
         let gomb = document.createElement('button');
