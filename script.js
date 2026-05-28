@@ -71,4 +71,35 @@ function megjelenitFejezet(fejezetId) {
         ujrainditasGomb();
         return;
     }
+    fejezet.opciok.forEach(opcio => {
+
+        if (fejezet.kulcs_szukseges && opcio.kovetkezo === 44 && !jatekos.hatizsak.includes("Kapu kulcs")) {
+            return;
+        }
+        if (fejezet.kulcs_szukseges && opcio.kovetkezo === 278 && jatekos.hatizsak.includes("Kapu kulcs")) {
+            return;
+        }
+
+        if (fejezet.terkep_szukseges && opcio.kovetkezo === 400 && !jatekos.hatizsak.includes("Térkép darab")) {
+            return; 
+        }
+        if (fejezet.terkep_szukseges && opcio.kovetkezo === 399 && jatekos.hatizsak.includes("Térkép darab")) {
+            return; 
+        }
+
+        let gomb = document.createElement('button');
+        gomb.className = 'choice-btn';
+        gomb.innerText = opcio.szoveg;
+        
+        gomb.onclick = () => {
+            if (fejezetId === 10 && opcio.szoveg.includes("Zsebre vágom")) {
+                if (!jatekos.hatizsak.includes(fejezet.targy)) {
+                    jatekos.hatizsak.push(fejezet.targy);
+                }
+            }
+            megjelenitFejezet(opcio.kovetkezo);
+        };
+        
+        gombokContainer.appendChild(gomb);
+    });
 }
