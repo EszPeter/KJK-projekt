@@ -16,3 +16,10 @@ fetch('konyv.json')
         console.error("Hiba történt a JSON betöltésekor:", error);
         document.getElementById('story-text').innerText = "Beolvasás sikertelen. Kérlek indítsd el a Live Servert!";
     });
+    
+function jatekInditasa() {
+    aktualisFejezetId = 1;
+    jatekos.eletero = 20;
+    jatekos.hatizsak = ["Kard", "Élelem"];
+    megjelenitFejezet(aktualisFejezetId);
+}
